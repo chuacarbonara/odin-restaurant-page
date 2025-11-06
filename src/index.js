@@ -1,3 +1,4 @@
+import {homeTab} from "./home.js";
 import "./styles.css";
 
-console.log("Hello World!");
+homeTab();

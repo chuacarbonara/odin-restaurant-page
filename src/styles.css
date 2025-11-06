@@ -2,3 +2,56 @@ body {
     background-image: url("../images/body-bg.jpg");
     background-size: cover;
 }
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 48px;
+}
+
+.container {
+    border: 3px solid rgb(219, 0, 84);
+    background-color: rgb(255, 108, 164,0.5);
+    color: white;
+    height: auto;
+    width: 75vw;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    background-color: rgb(219, 0, 84,0.75);
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-container,
+.time-container,
+.loc-container {
+    background-color: rgba(253, 225, 236, 0.5);
+    color: rgb(219, 0, 84);
+    width: 55vw;
+    margin-top: 24px;
+    padding: 12px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h2,
+p {
+    text-align: center;
+}
+
+p {
+    font-size: larger;
+}
