@@ -3,6 +3,40 @@ body {
     background-size: cover;
 }
 
+header {
+    margin: 0;
+    padding-top: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    background-color: rgba(253, 225, 236, 0.75);
+    color: rgb(219, 0, 84);
+    text-align: center;
+}
+
+nav>button {
+    height: 36px;
+    width: 180px;
+    margin: 0px 36px;
+    font-size: larger;
+    font-weight: 700;
+    background-color: rgb(219, 0, 84);
+    color: white;
+}
+
+nav>button:hover {
+    background-color: rgba(253, 225, 236, 0.75);
+    color: rgb(219, 0, 84);
+}
+
 #content {
     display: flex;
     justify-content: space-around;
@@ -34,22 +68,29 @@ body {
 
 .desc-container,
 .time-container,
-.loc-container {
+.loc-container,
+.menucategory-container {
     background-color: rgba(253, 225, 236, 0.5);
     color: rgb(219, 0, 84);
     width: 55vw;
     margin-top: 24px;
     padding: 12px 24px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
 
+.menucategory-container {
+    background-color: rgba(253, 225, 236, 0.75);
+}
+
 h2,
 p {
     text-align: center;
+    margin: 0;
 }
 
 p {

@@ -2,12 +2,12 @@ const contentDiv = document.getElementById("content");
 
 function createHome(){
     const homeContainer = document.createElement("div");
+    contentDiv.textContent = "";
     homeContainer.classList.add("container");
-    contentDiv.appendChild(homeContainer);
 
     const homeTitleContainer = document.createElement("div");
     homeTitleContainer.classList.add("title-container");
-    homeTitleContainer.innerHTML = "<h1>TIPSY CAKES</h1>"
+    homeTitleContainer.innerHTML = "<h1>TIPSY CAKES</h1>";
     homeContainer.appendChild(homeTitleContainer);
 
     const homeDescription = document.createElement("div");
@@ -24,8 +24,10 @@ function createHome(){
     homeLocation.classList.add("loc-container");
     homeLocation.innerHTML = "<p>We are located at <strong>777 Euphoria Road, Divine Town.</strong></p>"
     homeContainer.appendChild(homeLocation);
+
+    return homeContainer;
 }
 
 export function homeTab(){
-    return createHome();
+    contentDiv.appendChild(createHome());
 }
